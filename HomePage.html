@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <title>LoveMatch - Find Your Perfect Match</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <!--
+        Top Section
+    -->
+
+    <div class="topBG" id="Top">
+        <a href="HomePage.html">
+            <img src="pink.gif" alt= "Logo" class="logo"> 
+            <h1 class="logoName">LoveMatch</h1>
+        </a>
+        <button onclick="openForm1()" class="topMenu">Login</button>
+    
+
+     <!--
+        Middle Section
+     -->
+
+        <div class = "middle">
+            <h1 class="middleText"> Find Your Perfect Match </h1>
+            <button onclick="openForm2()" class="middleButton">Start Finding!</button>
+        </div>
+    </div>
+
+     <!--
+        Review Section
+     -->
+
+    <div id="Bottom" style="background-color: black; text-align: center;">
+
+        <div class="reviewsBox">
+            <p class="reviewsTitle">
+            Ranbir Kapoor and Alia Bhatt
+            </p>
+            <hr>
+            <p class = "reviews">
+                My partner and I met on this dating website, and we couldn't be happier with the platform. 
+                The website's features and user interface made it easy for us to connect and get to know each other.                
+            </p>
+        </div>
+
+        <div class="reviewsBox">
+            <p class="reviewsTitle">
+                Riteish Deshmukh and Genelia
+                </p>
+                <hr>
+                <p class = "reviews">
+                    This dating website is perfect for busy professionals like us. 
+                    The website's search filters make it easy to find matches who meet our criteria, and the website's safety and privacy features give us peace of mind.
+                </p>
+        </div>
+
+        <div class="reviewsBox">
+            <p class="reviewsTitle">
+                Aditya Dhar and Yami Gautam
+            </p>
+            <hr>
+            <p class = "reviews">
+                As a famous artists, we appreciate the importance of chemistry. 
+                This dating website's compatibility test helped us find someone who shares our passion for fitness, and we've been working out together ever since.
+            </p>
+        </div>
+
+        <div class="reviewsBox">
+            <p class="reviewsTitle">
+                Bipasha Basu and Karan Grover
+                </p>
+                <hr>
+                <p class = "reviews">
+                    This dating website has helped us find love again after a tough breakup. 
+                    The website's user interface is easy to use, and the matching algorithm helped us find someone who shares our interests and values.
+                </p>
+        </div>
+
+        <div class="reviewsBox">
+            <p class="reviewsTitle">
+                Deepika Padukone and Ranveer Singh
+            </p>
+            <hr>
+            <p class = "reviews">
+                This dating website has helped us find love again after a tough breakup. 
+                The website's user interface is easy to use, and the matching algorithm helped us find someone who shares our interests and values.            
+            </p>
+        </div>
+
+        <div class="reviewsBox">
+            <p class="reviewsTitle">
+                Amitabh Bachchan and Jaya Bachchan
+            </p>
+            <hr>
+            <p class = "reviews">
+                We were hesitant to try online dating, but this website has changed our mind. 
+                The website's matching algorithm is spot on and we've met some amazing people who share our interests and values.
+            </p>
+        </div>
+    
+            <!--
+                Bottom Section
+            -->
+        <hr>
+        <ul class="item">
+            <li class="bottomHead">Legal</li>
+            <a href="privacy.html" class="bottomItem"> <li>Privacy</li> </a>
+            <a href="terms.html" class="bottomItem"> <li>Terms</li> </a>
+            <a href="cookie.html" class="bottomItem"> <li>Cookie Policy</li> </a>
+        </ul>
+        <ul class="item">
+            <li class="bottomHead">Contact</li>
+            <a href="contact.html" class="bottomItem"> <li>Contact Us</li> </a>
+            <a href="support.html" class="bottomItem"> <li>Support</li> </a>
+            <li> Made By Vaibhav </li>
+        </ul>
+        <ul class="item">
+            <li class="bottomHead">Safety</li>
+            <a href="comm.html" class="bottomItem"> <li>Community Guidelines</li> </a>
+            <a href="safety.html" class="bottomItem"> <li>Safety Tips</li> </a>
+            <a href="sec.html" class="bottomItem"> <li>Security</li> </a>
+        </ul>
+    
+        <hr>
+
+        <p style="color: rgb(183, 177, 177); margin: 3%; font-size: 110%; text-align: left;">
+            Attention all single people! If you're looking for love, companionship, or just a little bit of fun, you need to check out LoveMatch. 
+            With over 100 million users worldwide, it's the perfect place to find your next match. 
+            In today's world, where online dating is the norm, LoveMatch stands out as a safe and reliable option for meeting new people. <br><br>
+            Whether you're interested in a serious relationship or just want to keep things casual, LoveMatch has something for everyone. 
+            With its unique approach to matching, you can be sure that you'll find someone who shares your interests and values. 
+            Plus, with features like LoveMatch BFF and LoveMatch Biz, you can even find new friends or professional connections on the app. <br><br>
+            LoveMatch is more than just a dating site. It's a community of people from all walks of life, all looking to connect and make meaningful relationships. 
+            Whether you're straight, gay, or somewhere in between, LoveMatch welcomes everyone and encourages inclusivity and acceptance.<br><br>
+            So what are you waiting for? Download LoveMatch today and start swiping your way to your next great match!
+        </p> <br>
+        <p style="color: white; text-align: right;"> ©2023 34th Company, LLC, All Rights Reserved. </p>
+    </div>
+
+   <!-- 
+    The Login Form 
+-->
+        <form action="login.html" class="formStyle" id="Login-Form">
+            <h1 style="text-align: center; color: white; font-size: 200%;">Login</h1>
+            <input type="text" placeholder="Enter Username*" class="textBox" required>      
+            <input type="password" placeholder="Enter Password*" class="textBox" required>  
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+        </form>
+
+<!--
+    Registration Form
+-->
+
+        <form action="login.html" class="formStyle" id="Regis-Form">
+            <h1 style="text-align: center; color: white; font-size: 200%;">Registration</h1>
+            <input type="text" placeholder="Enter Email*" class="textBox" required>
+            <input type="text" placeholder="Enter Username*" class="textBox" required>      
+            <input type="password" placeholder="Enter Password*" class="textBox" required>
+            <input type="password" placeholder="Confirm Password*" class="textBox" required>  
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+        </form>
+
+</body> 
+</html>

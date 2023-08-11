@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveMatch - Find Your Perfect Match</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style3.css" type="text/css">
+</head>
+<body>
+
+    <div style="height: 100vh; width: 22vw; display: inline-block; position: absolute; border-right: 1px; border-style:none solid none none; border-color: gray;" id = 'Top'>
+        <div style="height: 5vw; border-right: 1px; border-style:none none solid none; border-color: gray;">
+            <button class = "profile" onclick="openForm1()"> 
+                    <img src="Mr. Clarke.jpg" style = 'height:3vw; width: 3vw; float:left; border-radius: 100%;'>
+                    <h1 style="font-size: 1.5vw; float: left; margin-top: 1.3vh; margin-left: 5px; color: rgb(29, 29, 29);">dadasdas</h1>
+            </button>
+                <div style="margin-left:2.5vw; position: absolute; margin-top: 40vh; padding: 5px 10px;">
+                    <p style="font-size: 2vw; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Start Matching!</p><br>
+                    <p style="font-size: 1vw; font-family:'Arial Narrow', Arial, sans-serif; text-align: center;">Your matches and messages will be shown here</p>
+                </div>
+        </div>
+    </div>
+
+    <a href="HomePage.html">
+    <div class="loginLogoDiv">
+        <div class="loginLogo">
+                <img src="pink.gif" alt= "Logo" class="logo"> 
+                <h1 class="logoName">LoveMatch</h1>
+            </div>
+        </div>
+    </a>
+
+    <div style="height: 85vh; width: 78vw; display: inline-block; position: absolute; right: 0; bottom: 0;" id="Bottom">
+        <div class="girlBox">
+            <div style="display: block; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 85%; width: 30%">
+                <p style="font-size: 1.5vw; text-align: center;" id="name"> Shraddha Kapoor, 36</p>
+                <p style="font-size: 1.1vw; text-align: center;"> Actress </p><br>
+                <p style="font-size: 1vw; font-weight: bold;">About Me:</p>
+                    <p style="font-size: 1vw;" id = "para1">Hey there, I'm Shraddha! 
+                        I'm an actress and singer based in Mumbai. 
+                        When I'm not working, you can find me practicing yoga, reading a good book, or trying out new recipes in the kitchen. 
+                        I'm a big foodie and love trying out new cuisines and restaurants. </p>
+                        <p style="font-size: 1vw;" id = "para2">
+                        I also enjoy spending time with my family and friends, and exploring the beautiful nature spots around Mumbai. 
+                        I'm a very positive and open-minded person, and I value honesty, kindness, and humor in people. 
+                        I'm looking for someone who is passionate about their work, has a good sense of humor, and is also interested in exploring new things together. 
+                        Let's grab a cup of chai and see where things go!</p>
+            </div>
+            <div style="display: block; position: absolute; height: 100%; width: 70%;">
+                <img src="shraddha.jpg" height="100%" width="100%" style="border-radius: 20px;" id="image">
+            </div>  
+        </div>
+            <div style="display: inline; position: absolute; transform: translate(-50%, -50%); bottom: -3%; left: 50%;">
+              <button class="buttonMenu" onclick="prev1()" id="prev"> <img src="arrow.gif" height="50px" width="50px" style="transform: rotate(90deg);"> </button>
+              <button class="buttonMenu"> <img src="cross.gif" height="50px" width="50px" onclick="newgirl()" id="cross"> </button>
+              <button class="buttonMenu"> <img src="heart.webp" height="50px" width="50px" onclick="newgirl()" id="heart"> </button>
+              <button class="buttonMenu"> <img src="tick.gif" height="50px" width="50px" onclick="newgirl()" id="tick"> </button>
+              <button class="buttonMenu" onclick="next1()" id="next"> <img src="arrow.gif" height="50px" width="50px" style="transform: rotate(270deg);"> </button>
+            </div>
+
+    </div>
+
+    <form class="formStyle" id="Login-Form">
+        <h1 style="text-align: center; color: white; font-size: 200%;">Profile</h1>
+        <input type="text" placeholder="New Username" class="textBox" >
+        <input type="text" placeholder="New Email" class="textBox" >      
+        <input type="text" placeholder="Add Phone Number" class="textBox" >      
+        <input type="password" placeholder="Old Password*" class="textBox" id="old">
+        <input type="password" placeholder="New Password*" class="textBox" id="new1">  
+        <input type="password" placeholder="Confirm New Password*" class="textBox" id="newconf">
+        <button type="buton" class="btn" onclick="checkPasswords()">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+    </form>
+    
+</body>
+</html>

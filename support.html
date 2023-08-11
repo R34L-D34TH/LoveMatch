@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPPORT | LoveMatch</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <script src="script.js"></script>
+    <style>  
+        label 
+        {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+          text-align: left;
+        }
+        
+        input[type="text"], textarea 
+        {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+          height: 10%;
+        }
+        
+        input[type="submit"] 
+        {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover 
+        {
+          background-color: #45a049;
+        }
+      </style>
+      
+</head>
+<body>
+  <a href="HomePage.html">
+    <div class="toplogo">
+        <div style="margin-left: 40%;">
+            
+                <img src="pink.gif" alt= "Logo" class="logo"> 
+                <h1 class="logoName">LoveMatch</h1>
+            
+        </div>
+    </div>
+</a>
+<div style="padding: 1.5% 5% 1% 5%; margin-top: 12vh; 
+            display: inline-block; background-image: url(support.jpg); 
+            width: 100vw; height: 100vh; background-size: 100vw 100vh;">
+    <div >
+      <form action="HomePage.html" class="supportBox">
+          <h1>Contact Support</h1>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email" required>
+          
+          <label for="query">Query</label>
+          <textarea id="query" name="query" placeholder="Enter your query" rows="5" required style="height:30%;"></textarea>
+          <br><br>
+          <input type="submit" value="Submit" onclick="formSubmit()">
+        </form>
+      </div>
+    </div>
+      <div style="text-align: center;">
+        <div style="background-color:black; ">
+        <hr>
+        <ul class="item">
+            <li class="bottomHead">Legal</li>
+            <a href="privacy.html" class="bottomItem"> <li>Privacy</li> </a>
+            <a href="terms.html" class="bottomItem"> <li>Terms</li> </a>
+            <a href="cookie.html" class="bottomItem"> <li>Cookie Policy</li> </a>
+        </ul>
+        <ul class="item">
+            <li class="bottomHead">Contact</li>
+            <a href="contact.html" class="bottomItem"> <li>Contact Us</li> </a>
+                <a href="support.html" class="bottomItem"> <li>Support</li> </a>
+            <li style="color: black;"> Made By Vaibhav </li>
+        </ul>
+        <ul class="item">
+            <li class="bottomHead">Safety</li>
+            <a href="comm.html" class="bottomItem"> <li>Community Guidelines</li> </a>
+            <a href="safety.html" class="bottomItem"> <li>Safety Tips</li> </a>
+            <a href="sec.html" class="bottomItem"> <li>Security</li> </a>
+        </ul>
+        <hr>
+      </div>
+            <p style="text-align: right; color: black;"> ©2023 34th Company, LLC, All Rights Reserved. </p>
+        </div>
+    </body>
+</html>
